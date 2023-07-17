@@ -1944,7 +1944,7 @@
 
 <body>
     <?php
-    include "header.php";
+    include_once "header.php";
     ?>
     <div style='clear:both;'></div>
     <!-- Featured Content Slider End -->
