@@ -334,10 +334,10 @@ pre,code,tt{font:13px 'andale mono','lucida console',monospace;line-height:18px}
 .menus li li:hover ul,.menus li li.sfHover ul{left:100%;top:0}
 .menus li li:hover li ul,.menus li li.sfHover li ul{top:-999em}
 .menus li li li:hover ul,.menus li li li.sfHover ul{left:100%;top:0}
-.sf-shadow ul{padding:0 8px 9px 0;-moz-border-radius-bottomleft:17px;-moz-border-radius-topright:17px;-webkit-border-top-right-radius:17px;-webkit-border-bottom-left-radius:17px}
+.sf-shadow ul{padding:0 8px 9px 0;-moz-border-radius-bottomleft:17px;-moz-border-radius-topright:17px;}
 .menus .sf-shadow ul.sf-shadow-off{background:transparent}
 .menu-primary-container{float:left;padding:0;position:relative;height:28px;z-index:10;margin:10px 0 0 15px}
-.menu-primary{}
+
 .menu-primary ul{min-width:160px}
 .menu-primary li a{color:#555;text-shadow:0px 0px 0px #fff;padding:8px 15px;text-decoration:none;text-transform:uppercase;font:normal 11px/11px Oswald;background:url(//2.bp.blogspot.com/-i8qlj6PSJYc/UC74O2i4L3I/AAAAAAAAA08/VgY2bg_QsRo/s000/menu-primary-bg.png) left top repeat-x;border:1px solid #DBDBDB;text-shadow:0 0px 0 #FFF;margin:0 4px 0 0}
 .menu-primary li a:hover,.menu-primary li a:active,.menu-primary li a:focus,.menu-primary li:hover > a,.menu-primary li.current-cat > a,.menu-primary li.current_page_item > a,.menu-primary li.current-menu-item > a{color:#fff;text-shadow:0px 0px 0px #000;outline:0;background:url(//2.bp.blogspot.com/-i8qlj6PSJYc/UC74O2i4L3I/AAAAAAAAA08/VgY2bg_QsRo/s000/menu-primary-bg.png) left -128px repeat-x;border:1px solid #173463;text-shadow:0 0px 0 #00112F}
@@ -348,9 +348,9 @@ pre,code,tt{font:13px 'andale mono','lucida console',monospace;line-height:18px}
 .menu-primary li li .sf-sub-indicator{padding:11px 13px 12px 0px;}
 .wrap-menu-primary .sf-shadow ul{background:url('//2.bp.blogspot.com/-GwAdk08elYQ/UC74PLlvtrI/AAAAAAAAA1E/JNvZDZQ_lbQ/s000/menu-primary-shadow.png') no-repeat bottom right}
   
-.menu-secondary-container{width:960px;height:50px;z-index:10;background:url(https://lh4.googleusercontent.com/-dPXKHyx2Tyg/Uy1E44VTUgI/AAAAAAAADNY/GYWOkMi2ig4/s000/menu-secondary-bg.png);position: fixed; left top repeat-x}
-.menu-secondary{}
-.menu-secondary ul{min-width:;}
+.menu-secondary-container{width:960px;height:50px;z-index:10;background:url(https://lh4.googleusercontent.com/-dPXKHyx2Tyg/Uy1E44VTUgI/AAAAAAAADNY/GYWOkMi2ig4/s000/menu-secondary-bg.png);position: fixed; top: repeat-x}
+
+
 .menu-secondary li a{color:#fff;padding:11px 13px 13px 14px;text-decoration:none;text-transform:uppercase;font:19px/26px Oswald;text-shadow:2px 3px 2px #001B49}
 .menu-secondary li a:hover,.menu-secondary li a:active,.menu-secondary li a:focus,.menu-secondary li:hover > a,.menu-secondary li.current-cat > a,.menu-secondary li.current_page_item > a,
   
@@ -367,7 +367,7 @@ pre,code,tt{font:13px 'andale mono','lucida console',monospace;line-height:18px}
 .wrap-menu-secondary .sf-shadow ul{background:url('//2.bp.blogspot.com/-CJfr3pQ6l8I/UC74Pp6lxVI/AAAAAAAAA1U/PuIo8nrwDB4/s000/menu-secondary-shadow.png') no-repeat bottom right}
   
 .fp-slider{margin:0 0 15px 0;padding:0px;width:930px;height:252px;z-index: 1;overflow:hidden;position:relative;}
-.fp-slides-container{}
+
 .fp-slides,.fp-thumbnail,.fp-prev-next,.fp-nav{width:930px}
 .fp-slides,.fp-thumbnail{height:220px;overflow:hidden;position:relative}
 .fp-title{color:#fff;text-shadow:0px 0px 0px #000;font:bold 18px Oswald;padding:0 0 2px 0;margin:0}
@@ -392,7 +392,7 @@ pre,code,tt{font:13px 'andale mono','lucida console',monospace;line-height:18px}
 .tabs-widget li:first-child{margin:0}
 .tabs-widget li a{color:#666;background:url(https://lh3.googleusercontent.com/-mwsK-x8PSEg/Uy1FnbnsKKI/AAAAAAAADNs/Ew8weo9bFzM/s000/tabs-bg.png) left top repeat-x;padding:6px 12px;display:block;text-decoration:none;font: 17px/12px Oswald;border:1px solid #D9D9D9}
 .tabs-widget li a:hover,.tabs-widget li a.tabs-widget-current{background:url(https://lh3.googleusercontent.com/-mwsK-x8PSEg/Uy1FnbnsKKI/AAAAAAAADNs/Ew8weo9bFzM/s000/tabs-bg.png) left -124px repeat-x;color:#FFF;text-shadow:0px 0px 0px #000;border:1px solid #072658;text-decoration:none}
-.tabs-widget-content{}
+
 .tabviewsection{margin-top:10px;margin-bottom:10px;}
 #crosscol-wrapper{display:none;}
 .PopularPosts .item-title{font-weight:bold;padding-bottom:0.2em;text-shadow:0px 0px 0px #fff;}
@@ -449,7 +449,7 @@ border-left-style: none;
 }
 </style>
 </meta>
-<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=4918407763058583366&amp;zx=826625bb-affc-4a15-aa3b-7e0c4f7c1ef9' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=4918407763058583366&amp;zx=826625bb-affc-4a15-aa3b-7e0c4f7c1ef9' rel='stylesheet'/></noscript>
+<noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=4918407763058583366&amp;zx=826625bb-affc-4a15-aa3b-7e0c4f7c1ef9' rel='stylesheet'/></noscript>
 <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
 <meta name='google-adsense-platform-domain' content='blogspot.com'/>
 
@@ -486,8 +486,8 @@ include_once "header.php";
 <div id='summary6588051365707232327'><table border="0" cellpadding="0" cellspacing="0" style="border-collapse:
  collapse;width:425pt" width="559">
 	<colgroup>
-		<col style="mso-width-source:userset;mso-width-alt:5156;width:106pt" width="141">
-		<col span="11" style="mso-width-source:userset;mso-width-alt:1389;
+		<col style="width:106pt" width="141">
+		<col span="11" style="
  width:29pt" width="38">
 	</colgroup>
 	
