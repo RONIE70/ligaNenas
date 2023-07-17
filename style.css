@@ -1,4 +1,4 @@
-control
+
         @font-face {
             font-family: 'Oswald';
             font-style: normal;
@@ -220,7 +220,7 @@ control
 
         /* Headings
 ----------------------------------------------- */
-        h2 {}
+        
 
         /* Posts
 -----------------------------------------------*/
@@ -229,7 +229,7 @@ control
             display: none;
         }
 
-        .wrapfullpost {}
+        
 
         .post {
             margin-bottom: 15px;
@@ -607,7 +607,8 @@ control
             -webkit-transform: scale(1.4);
             -o-transform: scale(1.4);
             -ms-transform: scale(1.4);
-            transform: scale(1.4) filter:alpha(opacity=100);
+            transform: scale(1.4);
+            filter:alpha(opacity=100);
             filter: grayscale(0%);
             -moz-opacity: 1.0;
             opacity: 1.0;
@@ -945,8 +946,8 @@ control
             padding: 0 8px 9px 0;
             -moz-border-radius-bottomleft: 17px;
             -moz-border-radius-topright: 17px;
-            -webkit-border-top-right-radius: 17px;
-            -webkit-border-bottom-left-radius: 17px
+            border-top-right-radius: 17px;
+            border-bottom-left-radius: 17px
         }
 
         .menus .sf-shadow ul.sf-shadow-off {
@@ -962,7 +963,7 @@ control
             margin: 10px 0 0 15px
         }
 
-        .menu-primary {}
+        
 
         .menu-primary ul {
             min-width: 160px
@@ -1054,13 +1055,13 @@ control
             z-index: 10;
             background: url(https://lh4.googleusercontent.com/-dPXKHyx2Tyg/Uy1E44VTUgI/AAAAAAAADNY/GYWOkMi2ig4/s000/menu-secondary-bg.png);
             position: fixed;
-            left top repeat-x
+            top: repeat-x
         }
 
-        .menu-secondary {}
+        
 
         .menu-secondary ul {
-            min-width: ;
+            min-width: auto;
         }
 
         .menu-secondary li a {
@@ -1144,7 +1145,7 @@ control
             position: relative;
         }
 
-        .fp-slides-container {}
+        
 
         .fp-slides,
         .fp-thumbnail,
@@ -1329,7 +1330,7 @@ control
             text-decoration: none
         }
 
-        .tabs-widget-content {}
+        
 
         .tabviewsection {
             margin-top: 10px;
@@ -1783,7 +1784,7 @@ h2{}
 /* Posts
 -----------------------------------------------*/
 h2.date-header{margin:1.5em 0 .5em;display:none;}
-.wrapfullpost{}
+
 .post{margin-bottom:15px;}
 .post-title{color:#024182;margin:0 0 10px 0;padding:0;font-family: Oswald;font-size:35px;line-height:60px;font-weight:bold;}
 .post-title a,.post-title a:visited,.post-title strong{display:block;text-decoration:none;color:#024182;text-decoration:none;}
@@ -1868,7 +1869,7 @@ a.opacidad:hover img {
 -webkit-transform: scale(1.4);
 -o-transform: scale(1.4);
 -ms-transform: scale(1.4);
-transform: scale(1.4)
+transform: scale(1.4);
 filter:alpha(opacity=100);
 filter: grayscale(0%);
 -moz-opacity: 1.0;
