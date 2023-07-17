@@ -459,7 +459,7 @@ border-left-style: none;
 
 </head>
 <?php
-include_once "header.php";
+include "header.php";
 ?>
 <div style='clear:both;'></div>
 <!-- Featured Content Slider End -->
