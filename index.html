@@ -126,15 +126,9 @@
             font-size: 14px;
             margin: 0px;
             padding: 0px;
+            max-height: 2900px;
+            height: 80%;
     }
-    .AAbody {
-            
-            background: linear-gradient(rgb(10, 10, 10),blue, pink);
-            font-family: Oswald;
-            font-size: 14px;
-            margin: 0px;
-            padding: 0px;
-        }
 
         a:link,
         a:visited {
@@ -405,10 +399,7 @@
 
         /* FOOTER
 ----------------------------------------------- */
-        #footer {
-            margin-bottom: 15px;
-            margin-top: 0px;
-        }
+        
 
         #copyrights {
             color: #FFF;
@@ -427,10 +418,11 @@
         }
 
         #credits {
-            color: #829ECE;
+            color: #1bb9b7;
             text-align: center;
-            font-size: 11px;
-            padding: 10px 0 0 0
+            font-size: 20px;
+            padding: 10px 0 0 0;
+            background-color:#001A48
         }
 
         #credits a {
@@ -1834,9 +1826,10 @@ body#layout .social-profiles-widget h3 {display:none;}
 #outer-wrapper{width:960px;margin:50px auto 0px;padding:0px;text-align:left;background:url(//1.bp.blogspot.com/-3lq3_ZQDaBg/UC74JWsnCvI/AAAAAAAAA0E/N9NK2pjZjgU/s000/container-bg.png) left top repeat-x;}
 #content-wrapper{background:#fff;padding:15px;margin-top: 0px;}
 #main-wrapper2{width:615px;float:left;margin:0px;padding:0px 0px 0px 0px;word-wrap:break-word;overflow:hidden;}
-#rsidebar-wrapper{width:290px;float:right;margin:0px;padding:0px 0px 0px 0px;word-wrap:break-word;overflow:hidden;
-position: relative;
-left:200px;}
+#rsidebar-wrapper{width:290px;margin:0px;padding:0px 0px 0px 0px;word-wrap:break-word;overflow:hidden;
+    position: relative;
+    left: 760px;
+    top: -5130px;}
 /* Headings
 ----------------------------------------------- */
 
@@ -1870,12 +1863,14 @@ h2.date-header{margin:1.5em 0 .5em;display:none;}
 /* FOOTER
 ----------------------------------------------- */
 #footer{margin-bottom:15px;margin-top:0px;}
-#copyrights{color:#FFF;background:#00152c;text-align:center;padding:15px 0}
+#copyrights{color:#FFF;background:#00152c;text-align:center;padding:15px 0;position: relative;
+    top: -3600px;
+}
 #copyrights a{color:#FFF}
 #copyrights a:hover{color:#FFF;text-decoration:none}
-#credits{color:#829ECE;text-align:center;font-size:11px;padding:10px 0 0 0}
+#credits{position: relative; top: -3620px;color:#94a6c4;text-align:center;font-size:11px;padding:10px 0 0 0}
 #credits a{color:#829ECE;text-decoration:none}
-#credits a:hover{text-decoration:none;color:#829ECE}
+#credits a:hover{text-decoration:none;color:#b4bfd1}
 /* Search
 ----------------------------------------------- */
 #search{border:1px solid #E1E1E1;background:#FFF url(//3.bp.blogspot.com/-d3oJC7J27cs/UC74OM8zXrI/AAAAAAAAA0s/CKe7DRQuF94/s000/search.png) 99% 50% no-repeat;text-align:left;padding:6px 24px 6px 6px}
@@ -4743,7 +4738,7 @@ transform: rotate(180deg);
 
       
     <style type="text/css">
-      html { font-family:Calibri, Arial, Helvetica, sans-serif; font-size:11pt; background-color:white }
+      html { font-family:Calibri, Arial, Helvetica, sans-serif; font-size:11pt }
       a.comment-indicator:hover + div.comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em }
       a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em }
       div.comment { display:none }
@@ -6054,9 +6049,18 @@ transform: rotate(180deg);
             </div>
         </div>
     </div>
-    <div class='info'>
+    <style>
+        #info{
+            z-index:2;
+            position: relative;
+            top: 1500px;
+            color: #DBDBDB;
+            left: -100px;
+        }
+    </style>
+    <div >
         <div class='social-profiles-widget'>
-            <h3 class='widgettitle'>Contacto</h3>
+            <h3 class='widgettitle' style="color: #DBDBDB;">Contacto</h3>
             <div align='center'>
                 <table cellpadding='0' cellspacing='0' width='288'>
                     <tr>
@@ -6064,35 +6068,24 @@ transform: rotate(180deg);
                             <img src='https://lh3.googleusercontent.com/eO6meQ_Sm8dGR5sPvGz-OR2O2IEXKQP4CHYydTS7FhwN5a1qF4VcUdMLRa_UAsVcyA2uFY0xHJQGWsowY2nvUNTlnMdjnwAE1TU2_WzAg-0Fg7jT-J7F8jHCXgSHraFeZa-SakWDJ8tfECDaTQ6qHhdGAMY66KMAlPg415rEsQ5efWnAfD1i5o9g1aBIUNgIV2JVgZOhXIXvIgoyOt4mnEPuMXtOgGN0gmOf07YO2TidO6qzvwf59c8YoJK3JVxAidAPbTmuhXDTJTuFs1qHUnzYvOsZA6IF5BhUQtVPFO_cFW-jbVFM0YoS7Yu7J537nZmaPhZRgyLWQ6r531aRyUxV2AGkiacqXlSkXcUjFczUkHmcovqETQ4nrVfoRR9WTHT9CD1E4VBNH-DGAtBsSLsxIrsPAwwCaECsH7X9JeVvWdpJovT_Q0knKRZ6at1hpDJ3ROR4TLS225rYCMqyZ6MwxTArApZSDn-e1tkk_5uRD04C1Rz9FAFTRs2IicZg6oVtxF3XT3g7rEqViLIs-MWwsHnEfblD769rQpgoSL3Ox9iINDOHZ9cWu2kvP_oZUowJKxdiD-QtvrFGUI1ViXCWZky_oGnxEUl340ZIAikcpc2Y3Gl_vAqB_556H59DrtDz2SOzlAl9jIHFpWBjnVyy4ZsAPIXDQk_UkpGjqWjWU0GlUF8KJRdFryTzIww=s50-no' title='Dirección' />
                         </td>
                         <td align='left'>
-                            <font FACE='Oswald' size='4'>Enrique Fernandez 1331</font>
+                            <font FACE='Oswald' style="color: #DBDBDB;" size='4'>Enrique Fernandez 1331</font>
                         </td>
                     </tr>
                     <tr>
                         <td align='left'><a href='https://google.com/search?rlz=1C1ALOY_esAR1006AR1007&sxsrf=APwXEdf7NzSrvXar5wMuu2lQlPgokNRAOQ:1687914556814&q=enrique+fern%C3%A1ndez+1331+lanus+oeste&spell=1&sa=X&ved=2ahUKEwiCqMfc4-T_AhXopJUCHbgyCE8QBSgAegQICBAB&biw=1094&bih=472&dpr=1.25#g' ; return false; target='_blank'>
-                                <font FACE='Oswald' size='2'>Ver mapa</font>
+                                <font style="color: #DBDBDB;" FACE='Oswald' size='2'>Ver mapa</font>
                             </a></td>
                     </tr>
-                    <tr>
-                        <td align='left' style='border-bottom-style: solid; border-bottom-width: 1px'></td>
-                        <td align='left' style='border-bottom-style: solid; border-bottom-width: 1px'></td>
-                    </tr>
-                    <tr>
-                        <td align='left'></td>
-                        <td align='left'></td>
-                    </tr>
+                    
+                    
                     <tr>
                         <td align='left'><img src='https://lh3.googleusercontent.com/6J24leolM2dEzy6mV4I4As5rw_c_rD4wySCBF-IZOxCallNTbeCiloR0zkOkKx4roXKYe0v4lBGcMI5E4R35M2uVLXICt_JNKvAHEYb5S7wwqULVCFBiyBGyk8YDF3cWXMpxodmcDYccgfdu_by1pUIPdUaOOW89LIvMHZt2n6LV1sJXn9uo730bAQBtzxlPm6rkI4k9cmOiIJxZEwTM7AiYN-GhmhpDsHTJwhPZtxjvSJnWAtOKcplhg_9LcTEtev-tzLS8ZCG6uQb4QnxNoIQGIJdpHi5KLTl7Wu4JPIgsIrv7bQPV00sxpB5FiEVxaDHpRjFfttouXtfnGmobpXSefE3C74aJG2--6WuY98YblzDrupdALNOFzEX4F1i2bhCYmObGZEhY7LtOSpLRy5EhJYPm5jE28KHNMEnGn78uYp56C2EJMtCqmzwB4OZApn4nqSHw47NNvsikX2GG9g2B6qRtbMiBW1lbnHmSzVSQDZen7TgMQR6xPZ9u8Unqb9OtgeFL3j26KLbxdFa-lrpoZib3iqEJxklmJJIQXQu8Qd_6Jw0Wds6T0VgBMxC9sfMM6sdr4Q8utqMSx7VsFQeOW344M85_uWJweMjWPA1BSmdCEUgT9nxkbqy5teYP1nonZ5pkUhEyufdj-8wCyr7BuCES14ljw5JmBTDXNppwRiMtJNjVC8nR_fNGB3s=s50-no' title='e-mail' /></td>
                         <td align='left'>
-                            <font FACE='Oswald' size='4'>ligadelasnenas@gmail.com</font>
+                            <font style="color: #DBDBDB;" FACE='Oswald' size='4'>ligadelasnenas@gmail.com</font>
                         </td>
                     </tr>
                 </table>
-                <script async='async' crossorigin='anonymous' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5162242648405577'></script>
-                <!-- Grafico 3 -->
-                <ins class='adsbygoogle' data-ad-client='ca-pub-5162242648405577' data-ad-format='auto' data-ad-slot='3473214374' style='display:block'></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+                
             </div>
         </div>
     </div>
@@ -6118,67 +6111,29 @@ transform: rotate(180deg);
              </div>
     </div>
     
-    <div class='widget-container'>
-        <div class='social-profiles-widget'>
-            <h3 class='widgettitle'>Busqueda</h3>
-            <div align='center'>
-                <script async='async' src='https://cse.google.com/cse.js?cx=3b49fa6696376feae'></script>
-                <div class='gcse-search'></div>
-            </div>
-        </div>
-    </div>
-    <!-- <table cellpadding='0' cellspacing='0' style='width: 290px; height: 223px; background-image: url(&apos;https://lh3.googleusercontent.com/pw/AMWts8BO4hqdwJmREKIi0lHtJuEz5gXpF_nu-14hNgPQCsFlG3Qlf1uCo-SlWtyQudqDjs05NSXT_TTcI05S02_NUkbCs0ZlerEDFBA7c__X-gJnb7JfowgSF3KlEFhXwDNkWyBYkdAm0pgMVVkW1MQTvHRa1g=w290-h194-no?authuser=0&apos;)'> <tr> <td style='height: 194px'/> </tr> <tr> <td style='text-align: center; font-family: Oswald; background-color: #1c0426; color: #FFFFFF;'> <a href='https://wa.me/541163009219?text=Hola,%20quiero%20jugar!!!' style='color: #FFFFFF; font-size: 20PX;'>JUGAR</a></td> </tr> </table> -->
-    <div class='widget-container'>
-        <div class='social-profiles-widget'>
-            <h3 class='widgettitle'></h3>
-            <div align='center'>
-                <script async='async' crossorigin='anonymous' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5162242648405577'></script>
-                <!-- bloque1 -->
-                <ins class='adsbygoogle' data-ad-client='ca-pub-5162242648405577' data-ad-format='auto' data-ad-slot='2734708155' style='display:block'></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-                <script async='async' crossorigin='anonymous' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5162242648405577'></script>
-                <!-- grafico 4 -->
-                <ins class='adsbygoogle' data-ad-client='ca-pub-5162242648405577' data-ad-format='auto' data-ad-slot='5208606488' style='display:block'></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
-        </div>
-    </div>
+    
    
 </div>
 <!-- spacer for skins that want sidebar and main to be the same height-->
-<div class='clear'>&#160;</div>
-</div>
-<!-- end content-wrapper -->
-<!-- <style type='text/css'> .auto-style999 { visibility: visible; font-family: Oswald; font-style: center; text-align: center; font-size: 8pt; color: #FFFFFF; } .auto-style1000 { background-color: #00152C; } </style> <table align='center' cellpadding='0' cellspacing='0' style='width: 960px; margin-bottom: 0px;'> <tr> <td class='auto-style999' colspan='2' style='width: 222px; height: 50px;'><a title='Zona A'> <img height='40' src='https://lh3.googleusercontent.com/pw/AM-JKLW6GLjkILQBAf4oFdmykbiFfBsy4-gLbV-Rn1vABlCCmj-Xi7TW6ib1pSG1b2LTlZx3gm2bJlAxDlIRTw8rL1SWl4-sZlN4DfVXk_KpjpSVFp69ToBF5debQe_htxi2Qx_OoCKtz4PnvII0tCLORypX=s40-no?authuser=0' width='40'/></a></td> <td class='auto-style1000' style='width: 10px; height: 50px;'/> <td class='auto-style999' colspan='2' style='width: 222px; height: 50px;'><a title='Zona B'> <img height='40' src='https://lh3.googleusercontent.com/pw/AM-JKLUlXARR35t1-lRQnEBzcAaYgNzLK_uywOcCkmlMtEziuPVl9EjKaWOLLmzCwYFcQ-6CrwASxutjPyZdgUFoPmp1MoFbqvHiSNMqXN9RAjGS2s1YPhrzmcPjKgM2no_9uqdnVez3YBKa1NDR_3Fds1TR=s40-no?authuser=0' width='40'/></a></td> <td class='auto-style1000' style='width: 10px; height: 50px;'/> <td class='auto-style999' colspan='2' style='width: 222px; height: 50px;'><a title='Zona C'> <img height='40' src='https://lh3.googleusercontent.com/pw/AM-JKLVl8O9zehIv2c5X16Te3QBYViHvnI42ifz5he5yZHL4HADE0Db6XTLkKZ7QMpHtwJ2SPp7y-5Zp8CJboyy4EwojtaHJJ73k2QK9eQ753Sif-ZmsNJD8dBWNv2JWt105QeOYgLVt6MBwaE7qa_NXWOYr=s40-no?authuser=0' width='40'/></a></td> <td class='auto-style1000' style='width: 10px; height: 50px;'/> <td class='auto-style999' colspan='2' style='width: 222px; height: 50px;'><a title='Zona D'> <img height='40' src='https://lh3.googleusercontent.com/pw/AM-JKLV_4AwYpbZ9JibNsrZnJAsgHpariOYh2Mg4KNIUaDxFrw1OtjkQvrsvW3KrVaIV8J3b3IoiE4DS8DVSSUMaoXLIJ0XaftMrWU5_9Y9uzY9VtBtAO5tAlaWFqrmNz9ZHwT2QVhD2q32CuKA-T8wAa4nm=s40-no?authuser=0' width='40'/></a></td> </tr> <tr> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>11 DE AGOSTO</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>ALMAFUERTE AZUL</td> <td class='auto-style1000' style='width: 10px; height: 25px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>AGUA MINERAL</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>ALTO VERDE</td> <td class='auto-style1000' style='width: 10px; height: 25px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>ARCO IRIS</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>ARGENTINO AZUL</td> <td class='auto-style1000' style='width: 10px; height: 25px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>21 DE SEPTIEMBRE</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>22 DE FEBRERO</td> </tr> <tr> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>ALMAFUERTE V. A.</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>C. A. BANFIELD</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>BARRIO SITRA</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>BOUCHARD</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>BANFIELD BLANCO</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>CABAÑA DE S. J.</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>AMERICA</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>ARGENTINO BLANCO</td> </tr> <tr> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>BARRIO ENZ</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>DEFENSORES S. J.</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>C.C.V. INDEPENDENCIA</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>EL CICLÓN</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>CORDOBA</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>EL BOSQUE</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>SOCIAL BUJIA</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>DEF. DE LAVARDEN</td> </tr> <tr> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>GENERAL PAZ</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>GENERAL ROCA</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>EL FARO</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>INTEGRACION</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>EL PAREDON</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>FOMENTO</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>DEF. U. TEMPERLEY</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>EL PUENTE</td> </tr> <tr> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>ITUZAINGO</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>JUVENTUD DE FIORITO</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>LAS HERAS</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>LATINO</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>FUTBOL RIVERA</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>LA ESCUELITA</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>FALUCHO</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>FOMENTO DARWIN</td> </tr> <tr> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>LA LOMA</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>LOS AMIGOS BLANCO</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>MALVINAS</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>S.F.V. INDEPENDENCIA</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>LAPRIDA</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>PARQUE DEL REY</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>FOMENTO JUNIOR</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>LA MAKINA</td> </tr> <tr> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>LOS AMIGOS CELESTE</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>PESCADORES</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>SAN JOSE</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>SAN MARTIN M. G.</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>RAWSON</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>SAN FERNANDO</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>NEWELL&#39;S V. A.</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>SAN MARTIN DE BANFIELD</td> </tr> <tr> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>SAMPDORIA</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>SAN CAYETANO</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>UNION DE BUDGE</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>UNION DE SAN JOSE</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>SARGENTO CABRAL</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>SOCIAL LAS HERAS</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>SIN FRONTERAS</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>UNION ITALIANA GLEW</td> </tr> <tr> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>SAN JAVIER</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>VILLA ELVIRA</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>VILLA MAIPU</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>VILLA VETERE</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>SOCIEDAD ITALIANA</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>UNIDOS DE LOMAS</td> <td class='auto-style1000' style='width: 10px; height: 24px; padding-top: 0px; padding-bottom: 0px;'/> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>VILLA NIZA</td> <td class='auto-style999' style='width: 111px; height: 25px; padding-top: 0px; padding-bottom: 0px;'>VILLA RITA AZUL</td> </tr> </table> -->
-<div style='clear:both;'></div>
-<div id='footer-container'>
+
+
+
+
     <div id='footer'>
         <div id='copyrights'>
             <p>
-                <script type='text/javascript'>
-                    var creditsyear = new Date();
-                    
-                </script> - Liga Deportiva Infantil y Juvenil - 1er. AÑO - <a href='#'>
+             Liga Deportiva Infantil y Juvenil - 1er. AÑO - <a href='#'>
                     Liga de las Nenas - Sitio Oficial</a>
             </p>
         </div>
-        <div style='clear:both;'></div>
-        <script async='async' crossorigin='anonymous' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5162242648405577'></script>
-        <!-- Gráfico 2 -->
-        <ins class='adsbygoogle' data-ad-client='ca-pub-5162242648405577' data-ad-format='auto' data-ad-slot='4883317201' style='display:block'></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+        
+        
         <div id='credits'>
             <!-- you don't have permission to remove or change these -->
             <p>- Diseño Creativa @2023 - 1125623746 -</p>
         </div>
     </div><!-- #footer -->
-</div>
+
 
 <!-- end outer-wrapper -->
 
