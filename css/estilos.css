@@ -1,0 +1,561 @@
+@charset "utf-8";@import url(https://fonts.googleapis.com/css?family=Montserrat);@import url(https://fonts.googleapis.com/css?family=Open+Sans);@font-face{font-family:'chunkfiveroman';src:url('../fonts/chunkfive.eot');src:url('../fonts/chunkfive.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/chunkfive.woff2') format('woff2'),
+    url('../fonts/chunkfive.woff') format('woff'),
+    url('../fonts/chunkfive.ttf') format('truetype'),
+    url('../fonts/chunkfive.svg#chunkfiveroman') format('svg');font-weight:normal;font-style:normal;}
+    
+    @font-face {
+      font-family: "uefi";
+      src:url("../fonts/uefi.eot");
+      src:url("../fonts/uefi.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/uefi.woff") format("woff"),
+        url("../fonts/uefi.ttf") format("truetype"),
+        url("../fonts/uefi.svg#uefi") format("svg");
+      font-weight: normal;
+      font-style: normal;
+    
+    }
+    
+    [data-icon]:before {
+      font-family: "uefi" !important;
+      content: attr(data-icon);
+      font-style: normal !important;
+      font-weight: normal !important;
+      font-variant: normal !important;
+      text-transform: none !important;
+      speak: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    [class^="icon-"]:before,
+    [class*=" icon-"]:before {
+      font-family: "uefi" !important;
+      font-style: normal !important;
+      font-weight: normal !important;
+      font-variant: normal !important;
+      text-transform: none !important;
+      speak: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .icon-envelope-square:before {content: "\61";font-size: 18px;}
+    .icon-phone-square:before {content: "\62";font-size: 18px;}
+    .icon-mobile:before {content: "\65";font-size: 18px;}
+    .icon-facebook-square:before {content: "\66";font-size: 18px;}
+    .responsive {
+      width: 100%;
+      max-width: 650px;
+      height: auto;
+    }
+    #compartir > .icon-facebook-square:before {font-size: 24px;}
+    #facebook-1{ color:#305DB8; background: #FFFFFF;width: 26px;height: 28px;border-bottom-left-radius: 5px;border-top-left-radius: 5px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;}
+    *{margin:0;padding:0;border:0;-ms-text-size-adjust:none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+    body{background-color:rgba(190,196,212,1.00);}
+    #contenedor{background-color:#edeeef;width:100%;margin:auto;font-family:'Montserrat', sans-serif;}
+    header{width:100%;height:auto;}
+    main{width:100%;background-color:#f0f3f6;display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;}
+    #noticias_seccion{background-color:rgba(253,253,253,1.00);width:100%;height:auto;padding-top:10px}
+    #partidos_seccion{background-color:#edeeef;width:100%;height:400px;font-family:'Open Sans', sans-serif; font-size:14px;}
+    #publis_seccion{background-color:#edeeef;width:100%;height:auto;}
+    footer{background-color:#113F86;width:100%;height:120px;padding:7px;color:rgba(255,255,255,1.00);font-size:11px;}
+    #pie-text-derechos{width:100%;text-align:center;}
+    #pie-text-derechos a{color:rgba(251,202,0,1.00);text-decoration:none;}
+    #pie-text-derechos a:hover{color:#E30613;}
+    #me-gusta{margin-top:36px;}
+    #compartir{width:60%;float:right;margin-top:14px;}
+    h1{color:rgba(24,67,154,1.00);}
+    .franja_superior{width:100%;background-color:#ffffff;}
+     .escondido{ display: none; }
+    
+    #mobile_h{width:30%;font-family:'chunkfiveroman';color:#114790;}
+    #normal_h{width:60%;font-family:'chunkfiveroman';color:#114790;}
+    #icono_facebook{color:#114790;line-height:40px;text-align:right;width:5%;}
+    a:hover > #icono_facebook{color:rgba(241,31,34,1.00);}
+    #logo-celu{display:block;}
+    #logo-normal{display:none;}
+    .ir-arriba{display:none;padding:7px 13px 16px 12px;background:rgba(76, 106, 135, 0.65);font-size:20px;color:#fff;cursor:pointer;position:fixed;bottom:0px;right:1px;z-index:10;}
+    .facebook-seguir{position:fixed !important;right:0px;top:20px;z-index:10 !important;display:block;}
+    .facebook-seguir a{color:rgba(237,237,237,1.00);}
+    .facebook-seguinos{display:none;}
+    h2{text-transform:uppercase;font-size:24px;text-align:center;border-top:rgba(229,40,43,0.3) solid 1px;border-bottom:rgba(229,40,43,0.3) solid 1px;width:95%;margin-left:auto;margin-right:auto;color:#E30613;padding:5px;}
+    #titulo_torneos{height:30px;color:rgba(255,255,255,1.00);font-size:18px;padding:10px;}
+    #noticias_seccion img{display:block;margin:0 auto;padding-top:10px;}
+    #caja_banner > div{width:100%;height:100px;display:block; clear: left;float: right;}
+    #caja_banner > div > a{display:block;width:100%;height:100px;}
+    #caja_banner > div > a:hover{background:rgba(207,207,207,0.3);}
+    .banner_uefi{background:url("../imagenes/banner_escuelas_celular.gif") no-repeat scroll center/100% 100%;}
+    #texto_medio_noticias{text-align:center;width:95%;height:auto;margin:auto;margin-top:5px;}
+    #borde-sup-columnas-izq, #borde-sup-columnas-der{width:100%;background-color:rgba(205,27,30,1.00);height:10px;}
+    #borde-sup-columnas-izq2{width:100%;}
+    .titulo_partidos{background-color:rgb(110, 130, 161);width:100%;height:30px;text-transform:uppercase;font-size:13px;color:rgba(255,255,255,1.00);padding:6px 24px 0px 0px;text-align:center;}
+    .tab-partidos{width:100%;}
+    .tab-partidos, .tab-partidos-tr, .tab-partidos-td{border-spacing:0em;}
+    .tab-partidos-tr{width:15%;background-color:#f0f3f6;}
+    .tab-partidos-tr-2{background-color:#d5dbdf;}
+    .tab-partidos-td{width:85%;margin-right:5px; font-weight:bold; padding-left:5px;}
+    .tab-partidos-td img{margin-top:2px;}
+    .tab-manitos-td img{margin-top:5px;text-align:center;}
+    .tab-manitos{width:100%;border-spacing:0.1em;text-align:center;background-color:rgba(85,123,163,1.00);}
+    .tab-manitos-tr{background-color:#d5dbdf;width:100%;}
+    .tab-manitos-td{width:25%;text-align:center;}
+    .text_manitos{font-size:12px;}
+    #caja_publicidades > div{background-size: 100% 100%;width: 60%;display:inline-block;-webkit-box-shadow:2px 3px 1px 0px #BCBCBC;box-shadow:2px 3px 1px 0px #BCBCBC;margin-top:10px;}
+    #caja_publicidades{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+    #caja_publicidades a{display:block;height:110px;width:100%;}
+    .img-supercreativos{background:url(../imagenes/b_supercreativos.jpg) no-repeat center;}
+    .img-centro-a{background:url(../imagenes/b_centro_apertura.jpg) no-repeat center;}
+    .img-pelotas-kum{background:url(../imagenes/pelotas_kum.png) no-repeat center;}
+    .img-trofeos{background:url(../imagenes/b_trofeos.jpg) no-repeat center;}
+    .img-libertadores{background:url(../imagenes/b_libertadores.jpg) no-repeat center;}
+    .img-lifemfut{background:url(../imagenes/abito.jpg) no-repeat center;}
+    .img-ligadefutsal{background:url(../imagenes/b_ligadefutsal.jpg) no-repeat center;}
+    .img-gnc{ background:url(../imagenes/b_publicidad-gnc.jpg) no-repeat center;}
+    .img-pablo{ background:url(../imagenes/b_pablo.jpg) no-repeat center;}
+    .img-fede{ background:url(../imagenes/fedegarcia-logo.jpg) no-repeat center;}
+    .img-seguros{ background:url(../imagenes/b_seguros.jpg) no-repeat center;}
+    .img-beneficios{ background:url(../imagenes/b_beneficios.jpg) no-repeat center;}
+    
+    #caja_publicidades a:hover{background-color:rgba(227,227,227,1.00);opacity:0.4;}
+    .fa-facebook-square, .fa-twitter-square, .fa-google-plus-square, .fa-linkedin-square{background:rgba(255,255,255,1.00);width:26px;height:28px;border-bottom-left-radius:5px;border-top-left-radius:5px;border-top-right-radius:5px;border-bottom-right-radius:5px;}
+    .fa-facebook-square{color:#3b5998;}
+    .fa-twitter-square{color:#55acee;}
+    .fa-linkedin-square{color:#007bb5;}
+    .fa-google-plus-square{color:#dd4b39;}
+    footer ol li{display:inline-block;padding:1px;}
+    .text-compartir{font-size:9px;color:rgba(233,233,233,1.00);}
+    .text-compartir > a:hover{background-color:rgba(244,244,244,0.5);}
+    #institucional_seccion, #nosotros_seccion,#eventos_seccion, #reglas_seccion, #torneos_seccion, #contacto_seccion, #copas_seccion{width:100%;height:auto;padding-right:0px;padding-left:0px;margin-right:0px;margin-left:0px;padding-top:20px;background:#f0f3f6;}
+    #institucional_seccion, #nosotros_seccion, #reglas_seccion, #contacto_seccion, a{color:#E30613;text-decoration:none;}
+    #texto_medio_noticias{font-family:'Open Sans', sans-serif;}
+    #texto_medio_institucional, #texto_medio_nosotros, #texto_medio_reglas,#texto_medio_eventos, #texto_medio_torneos, #texto_medio_contacto, #texto_medio_copas{margin-top:10px;text-align:center;font-family:'Open Sans', sans-serif;background:rgba(255,255,255,1.00);width:95%;height:auto;margin:auto;color:rgba(85,100,140,1.00);padding:10px;font-size:15px;}
+    h3{font-size:19px;padding-top:10px;font-weight:bold;text-transform:uppercase;}
+    #texto_medio_institucional, #texto_medio_nosotros, #texto_medio_reglas > p{line-height:25px;}
+    #banner-uefi-abajo{padding-bottom:13px;padding-top:1px;}
+    #banner-uefi-abajo > div{width:95%;height:95px;display:block;margin-top:25px;margin-right:auto;margin-left:auto;padding:15px;}
+    #banner-uefi-abajo > div > a{width:100%;height:100px;display:block;}
+    .sub-titulos-nosotros{font-size:17px;font-weight:bold;background-color:rgba(220,228,235,0.5);}
+    .btn-group{display:inline-block;padding:17px 0px;margin-bottom:0;font-size:14px;font-weight:normal;line-height:2.429;text-align:center;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-image:none;border:1px solid transparent;border-radius:4px;width:100%;}
+    .btn-default{color:#fff;background-color:rgba(143,182,213,1.00);border-color:#ccc;padding:6px;}
+    .btn-group > a{color:#fff;background-color:rgba(143,182,213,1.00);}
+    .btn-group > a:hover{background-color:rgba(229,229,229,1.00);color:rgba(42,108,162,1.00);}
+    .btn-group >.active{background-color:rgba(64,115,175,1.00);}
+    .titulos-capitulos{text-transform:uppercase;font-size:23px;font-weight:bold;}
+    .sub-titulos-capitulos{font-weight:bold;text-decoration:underline;font-size:18px;}
+    .articulos{font-weight:bold;}
+    article > #capa1, #capa2, #capa3 > p{line-height:25px;}
+    #tab-anexos{border:1px solid rgba(64,115,175,1.00);width:30%;margin-left:auto;margin-right:auto;}
+    .tab-anexos1{border:1px solid rgba(64,115,175,1.00);background-color:rgba(130,163,203,0.5);}
+    .tab-anexos2{border:1px solid rgba(64,115,175,1.00);}
+    .select{background:#E7EBEF;border-radius:0px;border:1px solid #394CB7;height:35px;width:100%;font-size:16px;}
+    
+    
+    
+    
+    
+    
+    
+    
+    #selector2015, #selector2014, #selector2013, #selector2012{width:100%;margin:5px;text-align:center;font-weight:bold;color:rgba(42,108,162,1.00);background-color:rgba(220,228,235,0.5);;}
+    #iframe{width:100%;height:690px;}
+    .texto_eventos_centrado{text-align:center;}
+    #seccion_eventos{width:100%;height:auto;background:rgba(255,255,255,1.00);text-align:justify;}
+    .hide{display:none;}
+    label > .flechita::after{content:'>';color:rgba(248,54,57,1.00);font:1.2em "Consolas", monospace;right:12px;top:0px;padding:0 0 5px;position:absolute;font-weight:bold;pointer-events:none;transform:rotate(90deg);-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);-o-transform:rotate(90deg);-moz-transform:rotate(90deg);}
+    .delimitador{width:100%;max-width:580px;margin:auto;}
+    .contenedor_video{height:0px;width:100%;padding-top:56.25%;position:relative;}
+    .contenedor_video iframe{position:absolute;height:100%;width:100%;top:0px;left:0px;}
+    .video-responsive{position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;}
+    .video-responsive iframe,
+    .video-responsive object,
+    .video-responsive embed{position:absolute;top:0;left:0;width:100%;height:100%;}
+    #datos_contactos{width:95%;margin-left:auto;margin-right:auto;margin-top:64px;color:rgba(85,100,140,1.00);font-family:'Montserrat', sans-serif;text-align:left;}
+    #datos_contactos p{margin-top:14px;background-color:rgba(220,228,235,0.5);padding:10px;}
+    #datos_contactos a{text-decoration:none;color:rgba(85,100,140,1.00);font-size:15px;}
+    #datos_contactos a:hover{color:#E30613;}
+    #datos_contactos .fa-facebook-square{background:none;width:8%;height:17px;}
+    #datos_contactos .fa-mobile{height:7px;}
+    .seccion_contacto{padding:20px;}
+    #contacto{width:90%;margin-top:15px;margin-left:auto;margin-right:auto;padding:5px;margin-bottom:10px;;font-family:'Montserrat', sans-serif;background-color:rgba(220,228,235,0.5);}
+    .frame{padding:4px 0px;width:90%;margin:auto;border-radius:0px;border:1px solid rgba(93,122,180,1.00);background-color:rgba(255,255,255,1.00);color:black;transition:.5s;}
+    .datos{font-size:13px;color:rgba(43,106,181,1.00);display:block;margin-top:5px;font-weight:400;}
+    #textarea, .textarea{padding:8px 10px 8px 10px;width:90%;height:110px;margin:auto;resize:none;border-radius:0px;background-color:rgba(255,255,255,1.00);border:1px solid rgba(93,122,180,1.00);color:black;transition:.5s;font-size:.8em;}
+    #boton{padding:10px;background:inherit;border-radius:2px;border:1px solid #0065aa;color:black;font-weight:bold;transition:.3s;cursor:pointer;}
+    .boton{padding:8px 13px 8px 13px;background:rgba(85,100,140,1.00);border-radius:0px;border:1px solid rgba(85,100,140,1.00);color:#ffffff;margin-top:5px;font-weight:bold;transition:.3s;cursor:pointer;margin-left:14px;}
+    #text-form{font-size:1.6em;margin-top:20px;color:#888888;text-shadow:1px 0px 3px #888888;}
+    .frame:focus, #textarea:focus{color:black;border-radius:0px;border:1px solid #0058ff;transition:.5s;outline:inherit;}
+    #boton a:hover{border:1px solid black;color:black;transition:.3s;}
+    .asterisco{color:#E30613;font-size:10px;font-weight:bold;}
+    .obligatorio{font-size:11px;color:rgba(43,106,181,1.00);}
+    .texto_respuesta{width:90%;text-align:center;margin:auto;font-size:16px;}
+    #texto_medio_torneos a{color:rgba(42,108,162,1.00);}
+    #texto_medio_torneos a:hover{color:#E30613;}
+    #boton-copa-1, #boton-copa-2, #boton-copa-3, #boton-copa-4, #boton-copa-5, #boton-copa-6, #boton-copa-7, #boton-copa-8, #boton-copa-9, #boton-copa-10{font-family:'Montserrat', sans-serif;width:100%;background:rgb(192, 212, 228);height:50px;margin-top:20px;padding-top:14px;}
+    #boton-copa-1, #boton-copa-2, #boton-copa-3, #boton-copa-4, #boton-copa-5, #boton-copa-6, #boton-copa-7, #boton-copa-8, #boton-copa-9, #boton-copa-10 > a{}
+    #boton-copa-1, #boton-copa-2, #boton-copa-3, #boton-copa-4, #boton-copa-5, #boton-copa-6, #boton-copa-7, #boton-copa-8, #boton-copa-9, #boton-copa-10 > a:hover{}
+    #boton-copa-1, #boton-copa-2, #boton-copa-3, #boton-copa-4, #boton-copa-5, #boton-copa-6, #boton-copa-7, #boton-copa-8, #boton-copa-9, #boton-copa-10 >.active{}
+    #seccion_copas{font-family:'Open Sans', sans-serif;color:rgba(85,100,140,1.00);padding:5px;}
+    .texto_copas{width:95%;margin-right:auto;margin-left:auto;text-align:center;}
+    .tab-fixture-tr, .tab-fixture-tr-1, .tab-fixture-td{ border:1px solid rgb(143, 162, 180); text-align:center;}
+    .tab-fixture-tr-1{ background-color:rgb(233, 233, 233);color:rgba(79,122,181,1.00); font-weight:bold;}
+    #fecha-1, #fecha-2, #fecha-3, #fecha-4, #fecha-5, #fecha-6, #fecha-7, #fecha-8{ width:100%; height:auto;margin-top: 15px;}
+    #iframe-reglas, #iframe-mapas, #iframe-fixture, #iframe-posiciones, #iframe-cat03, #iframe-cat04, #iframe-cat05, #iframe-cat06, #iframe-cat07, #iframe-cat08{width:100%;height:630px;}
+    h4{font-size:21px;font-weight:bold;text-transform:uppercase;text-align:center;}
+    .caja-mapas{width:100%;height:auto;border:1px solid #c5c5c5;background-color:rgba(228,228,228,0.3);color:rgba(85,100,140,1.00);margin-top:10px;padding:5px;}
+    .caja-mapas > h5{font-size:18px;background-color:rgba(224,224,224,1.00);border-bottom:1px solid rgba(154,154,154,1.00);text-align:center;}
+    .text-cancha > h6{font-size:15px;}
+    .text-mapas{text-align:left;font-size:15px;float:left;width:80%;}
+    .titulo-escuelas{background-color:rgba(194,211,224,0.3);color:rgba(65,134,197,1.00);font-weight:600;}
+    .img-mapas{float:right;width:20%;border-left:1px solid rgba(212,212,212,1.00);height:78px;background-color:rgba(255,255,255,1.00);text-align:center;font-size:12px;color:rgba(65,134,197,1.00);}
+    .info-escuelas{width:100%;height:auto;text-align:center;padding:5px;padding-top:10px;}
+    .info-escuelas p{font-size:16px;line-height:23px;}
+    .info-escuelas h6{font-size:15px;}
+    .info-mapas{position:relative;padding-bottom:58%;height:0;overflow:hidden;width:100%;}
+    .info-mapas iframe{position:absolute;top:5px;left:0;width:100% !important;height:90% !important;}
+    .text-cancha{font-size:14px !important;}
+    .lineas{font-size:14px !important;}
+    #aclaracion-mapas{width:100%;height:auto;padding:13px;font-size:13px;background-color:rgba(243, 226, 226, 0.4);border:1px solid rgb(232, 91, 19);margin-top:23px;}
+    .asterisco-aclaracion{color:#E30613;font-size:15px;font-weight:bold;}
+    .tab-posiciones, .tab-resultados{ width:100%; text-align:center; margin-left:auto; margin-right:auto;}
+    .tab-posiciones{ font-size:10px;}
+    .tab-posi-1-fila{background-color: rgba(198,213,224,1.00);color:rgba(79,122,181,1.00);font-weight:bold;}
+    .tab-posi-tr,.tab-posi-td, .tab-posi-td-equipo, .tab-posi-td-total{border:1px solid rgb(143, 162, 180);text-align:center;}
+    .tab-posi-td-equipo{background-color: rgba(249,249,249,249);color:rgba(79,122,181,1.00);font-weight:bold; font-size:11px;}
+    .tab-posi-td-total{ color:rgba(228,47,50,1.00); font-weight:bold; background:rgba(224,236,243,251);}
+    
+    .tab-resul-1-fila{background-color: rgba(198,213,224,1.00);color:rgba(79,122,181,1.00);font-weight:bold;}
+    .tab-resul-tr,.tab-resul-td{border:1px solid rgb(143, 162, 180);text-align:center;}
+    .tab-resul-td-equipo{border:1px solid rgb(143, 162, 180);background-color:rgb(233, 233, 233);color:rgba(79,122,181,1.00);font-weight:bold;}
+    #res-fecha-1, #res-fecha-2, #res-fecha-3, #res-fecha-4, #res-fecha-5, #res-fecha-6, #res-fecha-7, #res-fecha-8, #res-fecha-9{width:100%;margin-top:15px;text-align: center;font-size:10px;}
+    #tab-index{ width:100%; border:1px solid rgb(143, 162, 180);text-align:center;}
+    /*#img-eventos-pc{ display:none;}*/
+    #img-eventos-pc{ max-width: 500px; min-width: 360px;}
+    
+    @media screen and (min-width:240px)and (max-width:320px){
+    #normal_h{display:none;}
+    #mobile_h{font-size:27px;float:right;line-height:0px;margin-right:72px;margin-top:33px;}
+    #icono_facebook{float:right;width:5%;clear:both;margin:-17% 6% 0% 0%;}
+    .franja_superior{height:61px;}
+    #logo-celu{margin-left:10px;float:left;}
+    #partidos_seccion{height:auto;}
+    .titulo_partidos{ font-size:14px;}
+    .tab-fixture-td{ font-size:11px !important;}
+    .tab-fixture-tr{ font-size:11px !important;}
+    #partidos_seccion{height:auto;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}
+    #noticias_seccion{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}
+    #publis_seccion{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}
+    aside#caja_banner{display:-webkit-box;display:-ms-flexbox;display:flex}
+    #caja-anotate{ width: 90%; height:495px;background:#ECECED; margin-left: auto;margin-right: auto; margin-top:30px; border:2px solid rgba(67,112,204,0.2);}
+    #caja-anotate > #anotate{display:block; width: 95%; height:61px;background:#ffffff;margin-left: auto;margin-right: auto;text-align:center;border:1px solid rgba(67,112,204,0.2);font-size:20px; margin-top: 10px; color: rgba(56,118,241,1.00); font-weight: bold;line-height: 28px;}
+    #caja-anotate >#anotate2{display:none;width: 95%; height:61px;background:#ffffff;margin-left: auto;margin-right: auto;text-align:center;border:1px solid rgba(67,112,204,0.2);font-size:20px; margin-top: 10px; color: rgba(56,118,241,1.00); font-weight: bold;line-height: 28px;}
+    #boton-1, #boton-2{ width:90%; height:180px;background:#ffffff;margin-left: auto;margin-right: auto;text-align:center; font-size:18px;margin-top:20px;padding:6px;border:1px solid rgba(67,112,204,0.2);}
+    #texto_medio_torneos >#texto-anotate{background:#ECECED;  border:2px solid rgba(67,112,204,0.2); color: rgba(223,24,27,1.00); width: 90%;font-size: 14px;margin-left: auto;margin-right: auto;margin-top: 20px;padding: 10px;}
+    }
+    @media screen and (min-width:321px)and (max-width:480px){
+    #normal_h{display:none;}
+    #mobile_h{font-size:27px;float:right;line-height:0px;margin-right:72px;width:35%;margin-top:35px;}
+    #icono_facebook{float:right;width:5%;clear:both;margin:-17% 6% 0% 0%;}
+    .franja_superior{height:61px;}
+    #logo-celu{margin-left:10px;float:left;}
+    #partidos_seccion{height:auto;}
+    .titulo_partidos{ font-size:14px;}
+    #me-gusta{margin-left:28px;}
+    #compartir{width:54%;}
+    #res-fecha-1, #res-fecha-2, #res-fecha-3, #res-fecha-4, #res-fecha-5, #res-fecha-6, #res-fecha-7, #res-fecha-8, #res-fecha-9{ font-size:11px;}
+    #partidos_seccion{height:auto;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}
+    #noticias_seccion{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}
+    #publis_seccion{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}
+    aside#caja_banner{display:-webkit-box;display:-ms-flexbox;display:flex}
+    #caja-anotate{ width: 90%; height:495px;background:#ECECED; margin-left: auto;margin-right: auto; margin-top:30px; border:2px solid rgba(67,112,204,0.2);}
+    #caja-anotate > #anotate{display:block; width: 95%; height:61px;background:#ffffff;margin-left: auto;margin-right: auto;text-align:center;border:1px solid rgba(67,112,204,0.2);font-size:20px; margin-top: 10px; color: rgba(56,118,241,1.00); font-weight: bold;line-height: 28px;}
+    #caja-anotate >#anotate2{display:none;width: 95%; height:61px;background:#ffffff;margin-left: auto;margin-right: auto;text-align:center;border:1px solid rgba(67,112,204,0.2);font-size:20px; margin-top: 10px; color: rgba(56,118,241,1.00); font-weight: bold;line-height: 28px;}
+    #boton-1, #boton-2{ width:90%; height:180px;background:#ffffff;margin-left: auto;margin-right: auto;text-align:center; font-size:18px;margin-top:20px;padding:6px;border:1px solid rgba(67,112,204,0.2);}
+    #texto_medio_torneos >#texto-anotate{background:#ECECED;  border:2px solid rgba(67,112,204,0.2); color: rgba(223,24,27,1.00); width: 90%;font-size: 14px;margin-left: auto;margin-right: auto;margin-top: 20px;padding: 19px;}
+        
+    }
+    @media screen and (min-width:481px)and (max-width:660px){
+    #normal_h{display:block;font-size:18px;float:right;margin-top:33px;width:79%;line-height:0px;}
+    #mobile_h{display:none;}
+    #icono_facebook{float:right;width:5%;clear:both;margin:-17% 6% 0% 0%;}
+    .franja_superior{height:61px;}
+    #logo-celu{margin-left:10px;float:left;}
+    .banner_uefi{background:url("../imagenes/banner_escuelas_celular.gif") no-repeat scroll center/95% 100%;}
+    #partidos_seccion{height:auto;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}
+    #noticias_seccion{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}
+    #publis_seccion{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}
+    aside#caja_banner{display:-webkit-box;display:-ms-flexbox;display:flex}
+    .titulo_partidos{ font-size:14px;}
+    #caja_publicidades > div{width:49%;}
+    #me-gusta{margin-left:110px;}
+    #compartir{width:45%;}
+    .tab-fixture-td{ font-size:14px;}
+    #res-fecha-1, #res-fecha-2, #res-fecha-3, #res-fecha-4, #res-fecha-5, #res-fecha-6, #res-fecha-7, #res-fecha-8, #res-fecha-9{  font-size:14px;}
+    .tab-posi-td-equipo{ font-size:14px;}
+    .tab-posiciones{ font-size:13px;}
+    #caja-anotate{ width: 90%; height:495px;background:#ECECED; margin-left: auto;margin-right: auto; margin-top:30px; border:2px solid rgba(67,112,204,0.2);}
+    #caja-anotate > #anotate{display:block; width: 95%; height:61px;background:#ffffff;margin-left: auto;margin-right: auto;text-align:center;border:1px solid rgba(67,112,204,0.2);font-size:20px; margin-top: 10px; color: rgba(56,118,241,1.00); font-weight: bold;line-height: 28px;}
+    #caja-anotate >#anotate2{display:none;width: 95%; height:61px;background:#ffffff;margin-left: auto;margin-right: auto;text-align:center;border:1px solid rgba(67,112,204,0.2);font-size:20px; margin-top: 10px; color: rgba(56,118,241,1.00); font-weight: bold;line-height: 28px;}
+    #boton-1, #boton-2{ width:90%; height:180px;background:#ffffff;margin-left: auto;margin-right: auto;text-align:center; font-size:18px;margin-top:20px;padding:6px;border:1px solid rgba(67,112,204,0.2);}
+    #texto_medio_torneos >#texto-anotate{background:#ECECED;  border:2px solid rgba(67,112,204,0.2); color: rgba(223,24,27,1.00); width: 90%;font-size: 14px;margin-left: auto;margin-right: auto;margin-top: 20px;padding: 19px;}
+        
+    }
+    @media screen and (min-width:661px)and (max-width:850px){
+    #normal_h{display:block;font-size:24px;float:right;margin-top:66px;width:70%;line-height:0px;}
+    #mobile_h{display:none;}
+    #icono_facebook{float:right;width:5%;clear:both;margin:-17% 6% 0% 0%;}
+    .franja_superior{height:119px;}
+    #logo-normal{margin-left:15px;float:left;display:block;margin-top:1px;}
+    #logo-celu{display:none;}
+    #cssmenu > ul > li > a{font-size:13px !important;     background: #114790; }
+    #noticias_seccion{float: right;width: 100%;-webkit-box-ordinal-group: 2;-ms-flex-order: 1;order: 1;}
+    .banner_uefi{background:url("../imagenes/banner_escuelas_pc.gif") no-repeat scroll center/100% 100%;}
+    .facebook-seguir{top:44px;position:fixed !important;}
+    #partidos_seccion{width: 50%;height: 100%;-webkit-box-ordinal-group: 3;-ms-flex-order: 2;order: 2;box-sizing: border-box;}
+    .titulo_partidos{ height:auto;}
+    .tab-partidos{font-size:12px;}
+    #publis_seccion{ width: 50%;-webkit-box-ordinal-group: 4;-ms-flex-order: 3;order: 3;height: auto;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
+    #borde-sup-columnas-der{height:10px;}
+    #caja_publicidades > div{width:60%;}
+    #me-gusta{margin-top:36px;margin-left:131px;}
+    #compartir{width:42%;margin-top:26px;}
+    #selector2015, #selector2014, #selector2013, #selector2012{width:20%;text-align:center;}
+    #texto_medio_contacto{height:588px;}
+    #datos_contactos{width:40%;float:right;margin-right:30px;margin-top:65px;}
+    #contacto{width:40%;float:left;margin-left:30px;margin-top:22px;}
+    #texto_medio_torneos{height:550px;}
+    #boton-copa-1, #boton-copa-3, #boton-copa-5, #boton-copa-7, #boton-copa-9{width:45%;float:left;margin-left:10px;}
+    #boton-copa-2, #boton-copa-4, #boton-copa-6, #boton-copa-8, #boton-copa-10{width:45%;float:right;margin-right:10px;}
+    #fecha-1, #fecha-2, #fecha-3, #fecha-4, #fecha-5, #fecha-6, #fecha-7, #fecha-8{margin-top:15px; height:199px;}
+    #fecha-1, #fecha-3, #fecha-5, #fecha-7{width:45%;float:left;}
+    #fecha-2, #fecha-4, #fecha-6, #fecha-8{width:45%;float:right;}
+    #texto_medio_copas{height:830px;}
+    .caja-mapas{height:235px;margin-top:25px;}
+    .info-escuelas{width:55%;float:left;height:200px;}
+    .info-mapas{float:right;width:45%;padding-bottom:26%;height:90%;}
+    #aclaracion-mapas{margin-left:auto;margin-right:auto;}
+    .tab-posiciones{ width:90%;}
+    .tab-resultados{ width:90%;}
+    #res-fecha-1, #res-fecha-2, #res-fecha-3, #res-fecha-4, #res-fecha-5, #res-fecha-6, #res-fecha-7, #res-fecha-8, #res-fecha-9{ margin-top:35px;height:320px; font-size:14px;}
+    #res-fecha-1, #res-fecha-3, #res-fecha-5, #res-fecha-7{width:43%;float:left;margin-left: 5%;}
+    #res-fecha-2, #res-fecha-4, #res-fecha-6, #res-fecha-8{width:45%;float:right;margin-right: 3%;}
+    .tab-fixture-td{ font-size:14px;}
+    .tab-posi-td-equipo{ font-size:14px;}
+    .tab-posiciones{ font-size:14px;}
+    #caja_publicidades{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+    aside#caja_banner {display: -webkit-box;display: -ms-flexbox;display: flex;}
+    #caja-anotate{ width: 90%; height:300px;background:#ECECED; margin-left: auto;margin-right: auto; margin-top:30px; border:2px solid rgba(67,112,204,0.2);}
+    #caja-anotate > #anotate{display:none;}
+    #caja-anotate >#anotate2{display:block;width: 95%; height:61px;background:#ffffff;margin-left: auto;margin-right: auto;text-align:center;border:1px solid rgba(67,112,204,0.2);font-size:27px; margin-top: 10px; color: rgba(56,118,241,1.00); font-weight: bold;line-height: 56px;}
+    #boton-1{ width: 45%; float: left; margin-left: 18px;background:#ffffff;text-align:center; font-size:18px;margin-top:20px;padding:6px;border:1px solid rgba(67,112,204,0.2);}
+    #boton-2{ width:45%; float: right; margin-right: 18px; height:180px;background:#ffffff;text-align:center; font-size:18px;margin-top:20px;padding:6px;border:1px solid rgba(67,112,204,0.2);}
+    #texto_medio_torneos >#texto-anotate{background:#ECECED;  border:2px solid rgba(67,112,204,0.2); color: rgba(223,24,27,1.00); width: 90%;font-size: 19px;margin-left: auto;margin-right: auto;margin-top: 20px;padding: 19px;}
+        
+    }
+    @media screen and (min-width:851px)and (max-width:991px){
+    #normal_h{display:block;font-size:31px;float:right;margin-top:66px;width:75%;line-height:0px;}
+    #mobile_h{display:none;}
+    #icono_facebook{float:right;width:5%;clear:both;margin:-17% 6% 0% 0%;}
+    .franja_superior{height:119px;}
+    #logo-normal{margin-left:15px;float:left;display:block;margin-top:1px;}
+    #logo-celu{display:none;}
+    #cssmenu ul{margin-left:2% !important;}
+    
+    #borde-sup-columnas-der{background-color:rgba(205,27,30,1.00);height:10px;}
+    .facebook-seguir{top:44px;position:fixed !important;}
+    #noticias_seccion{float: right;width: 100%;-webkit-box-ordinal-group: 2;-ms-flex-order: 1;order: 1;}
+    .banner_uefi{background:url("../imagenes/banner_escuelas_pc.gif") no-repeat scroll center/100% 100%;}
+    /* hice cambio #caja_banner display:none;*/	
+    #caja_banner > div{width:100%;height:100px;display:block; clear: left;float: right;}	
+    #partidos_seccion{width: 50%;height: 100%;-webkit-box-ordinal-group: 3;-ms-flex-order: 2;order: 2;box-sizing: border-box;}/**/
+    .titulo_partidos{ height:auto;}
+    #publis_seccion{ width: 50%;-webkit-box-ordinal-group: 4;-ms-flex-order: 3;order: 3;height: auto;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
+    #caja_publicidades > div{width:60%;}
+    footer{height:100px;}
+    #pie-text-derechos{width:49%;float:left;text-align:left;}
+    #me-gusta{margin-top:22px;margin-left:134px;float:left;}
+    #compartir{width:20%;float:right;margin-top:4px;}
+    #selector2015, #selector2014, #selector2013, #selector2012{width:20%;text-align:center;}
+    #texto_medio_contacto{height:588px;}
+    #datos_contactos{width:40%;float:right;margin-right:30px;margin-top:65px;}
+    #contacto{width:40%;float:left;margin-left:30px;margin-top:22px;}
+    #texto_medio_torneos{height:550px;}
+    #boton-copa-1, #boton-copa-3, #boton-copa-5, #boton-copa-7, #boton-copa-9{width:45%;float:left;margin-left:10px;}
+    #boton-copa-2, #boton-copa-4, #boton-copa-6, #boton-copa-8, #boton-copa-10{width:45%;float:right;margin-right:10px;}
+    #fecha-1, #fecha-2, #fecha-3, #fecha-4, #fecha-5, #fecha-6, #fecha-7, #fecha-8{margin-top:35px;height:199px;}
+    #fecha-1, #fecha-3, #fecha-5, #fecha-7{width:45%;float:left;}
+    #fecha-2, #fecha-4, #fecha-6, #fecha-8{width:45%;float:right;}
+    #texto_medio_copas{height:830px;}
+    .caja-mapas{height:235px;margin-top:25px;width:93%;margin-left:auto;margin-right:auto;}
+    .info-escuelas{width:55%;float:left;height:200px;}
+    .info-mapas{float:right;width:45%;padding-bottom:25%;height:95%;}
+    #aclaracion-mapas{width:93%;margin-left:auto;margin-right:auto;}
+    .tab-posiciones{ width:80%;}
+    .tab-resultados{ width:87%;}
+    #res-fecha-1, #res-fecha-2, #res-fecha-3, #res-fecha-4, #res-fecha-5, #res-fecha-6, #res-fecha-7, #res-fecha-8, #res-fecha-9{ margin-top:35px;height:340px; font-size:15px;}
+    #res-fecha-1, #res-fecha-3, #res-fecha-5, #res-fecha-7{width:40%;float:left; margin-left:3%;}
+    #res-fecha-2, #res-fecha-4, #res-fecha-6, #res-fecha-8{width:40%;float:right; margin-right:3%;}
+    #img-eventos-pc{ display: block; margin-left:auto; margin-right:auto;}
+    .tab-fixture-td{ font-size:15px;}
+    .tab-posi-td-equipo{ font-size:15px;}
+    .tab-posiciones{ font-size:15px;}
+    div#caja_publicidades {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+    aside#caja_banner {display: -webkit-box;display: -ms-flexbox;display: flex;}
+    #caja-anotate{ width: 90%; height:300px;background:#ECECED; margin-left: auto;margin-right: auto; margin-top:30px; border:2px solid rgba(67,112,204,0.2);}
+    #caja-anotate > #anotate{display:none;}
+    #caja-anotate >#anotate2{display:block;width: 95%; height:61px;background:#ffffff;margin-left: auto;margin-right: auto;text-align:center;border:1px solid rgba(67,112,204,0.2);font-size:27px; margin-top: 10px; color: rgba(56,118,241,1.00); font-weight: bold;line-height: 56px;}
+    #boton-1{ width: 45%; float: left; margin-left: 18px;background:#ffffff;text-align:center; font-size:18px;margin-top:20px;padding:6px;border:1px solid rgba(67,112,204,0.2);}
+    #boton-2{ width:45%; float: right; margin-right: 18px; height:180px;background:#ffffff;text-align:center; font-size:18px;margin-top:20px;padding:6px;border:1px solid rgba(67,112,204,0.2);}
+    #texto_medio_torneos >#texto-anotate{background:#ECECED;  border:2px solid rgba(67,112,204,0.2); color: rgba(223,24,27,1.00); width: 90%;font-size: 19px;margin-left: auto;margin-right: auto;margin-top: 20px;padding: 19px;}
+        
+    }
+    
+    @media screen and (min-width:992px) and (max-width:1280px){
+    #contenedor{width:90%;}
+    #normal_h{display:block;font-size:32px;float:right;margin-top:66px;width:74%;line-height:0px;}
+    #mobile_h{display:none;}
+    #icono_facebook{float:right;width:5%;clear:both;margin:-17% 6% 0% 0%;}
+    .franja_superior{height:119px;}
+    .facebook-seguir{display:none;}
+    .facebook-seguinos{position:fixed !important;right:0px;top:20px;z-index:10 !important;display:block;}
+    #logo-normal{margin-left:15px;float:left;display:block;margin-top:1px;}
+    #logo-celu{display:none;}
+    #cssmenu ul{margin-left:10% !important;}
+    #noticias_seccion{width:50%;display:inline-block;clear: right; float: right;}
+    .banner_uefi{background:url("../imagenes/banner_escuelas_pc.gif") no-repeat scroll center/100% 100%;}
+    .facebook-seguir{top:50px;position:fixed !important;}
+    #partidos_seccion{width:25%;height:auto;float:left;}
+    /* realice cambio en publis_seccion display:none*/
+    #publis_seccion{width:25%;height:auto;float:right;}
+    #borde-sup-columnas-izq, #borde-sup-columnas-der{height:30px;}
+    #caja_publicidades > div{width:90%;margin:10px;background-size: 100% 100%;}
+    .img-supercreativos{background:url(../imagenes/b_supercreativos.jpg) no-repeat center 80%/104%;}
+    .img-ceniontro-a{background:url(../imagenes/b_centro_apertura.jpg) no-repeat center 90%/106%;}
+    .img-libertadores{background:url(../imagenes/b_libertadores.jpg) no-repeat center 80%/100%;}
+    .img-lifemfut{background:url(../imagenes/abito.jpg) no-repeat center 80%/100%;}
+    .img-ligadefutsal{background:url(../imagenes/b_ligadefutsal.jpg) no-repeat center 80%/100%;}
+    .img-trofeos{background:url(../imagenes/b_trofeos.jpg) no-repeat center 80%/100%;}
+    .img-gnc{ background:url(../imagenes/b_publicidad-gnc.jpg) no-repeat center 80%/100%;}
+    .img-pablo{ background:url(../imagenes/b_pablo.jpg) no-repeat center 80%/100%;}
+    .img-fede{ background:url(../imagenes/fedegarcia-logo.jpg) no-repeat center 80%/100%;}
+    .img-seguros{ background:url(../imagenes/b_seguros.jpg) no-repeat center 80%/100%;}
+    
+    footer{clear:both;height:100px;font-size:12px;}
+    #pie-text-derechos{width:49%;float:left;text-align:left;padding:10px;}
+    #me-gusta{margin-top:22px;margin-left:175px;float:left;}
+    #compartir{width:15%;float:right;margin-top:4px;}
+    .text-compartir{font-size:11px;}
+    #selector2015, #selector2014, #selector2013, #selector2012{width:20%;text-align:center;}
+    #texto_medio_torneos, #texto_medio_contacto{height:637px;}
+    #texto_medio_eventos{height:auto;}
+    #datos_contactos{width:40%;float:right;margin-right:30px;margin-top:65px;}
+    #contacto{width:40%;float:left;margin-left:62px;margin-top:22px;}
+    #boton-copa-1, #boton-copa-3, #boton-copa-5, #boton-copa-7, #boton-copa-9{width:40%;float:left;margin-left:44px;}
+    #boton-copa-2, #boton-copa-4, #boton-copa-6, #boton-copa-8, #boton-copa-10{width:40%;float:right;margin-right:44px;}
+    #boton-copa-1, #boton-copa-2, #boton-copa-3, #boton-copa-4, #boton-copa-5, #boton-copa-6, #boton-copa-7, #boton-copa-8, #boton-copa-9, #boton-copa-10{height:60px;padding-top:20px;}
+    #fecha-1, #fecha-2, #fecha-3, #fecha-4, #fecha-5, #fecha-6, #fecha-7, #fecha-8{margin-top:35px; height:199px;}
+    #fecha-1, #fecha-3, #fecha-5, #fecha-7{width:40%;float:left;margin-left:47px;}
+    #fecha-2, #fecha-4, #fecha-6, #fecha-8{width:40%;float:right;margin-right:47px;}
+    #texto_medio_copas{height:830px;}
+    .caja-mapas{height:250px;margin-top:25px;width:90%;margin-left:auto;margin-right:auto;}
+    .info-escuelas{width:55%;float:left;height:200px;}
+    .info-mapas{float:right;width:45%;padding-bottom:20%;height:95%;}
+    #aclaracion-mapas{width:90%;margin-left:auto;margin-right:auto;}
+    .fa-facebook-square, .fa-twitter-square, .fa-google-plus-square, .fa-linkedin-square{height:32px;}
+    .tab-posiciones{ width:80%;}
+    .tab-resultados{ width:86%;}
+    #res-fecha-1, #res-fecha-2, #res-fecha-3, #res-fecha-4, #res-fecha-5, #res-fecha-6, #res-fecha-7, #res-fecha-8, #res-fecha-9{ margin-top:35px;height: 290px; font-size:16px;}
+    #res-fecha-1, #res-fecha-3, #res-fecha-5, #res-fecha-7{width:40%;float:left; margin-left:3%;}
+    #res-fecha-2, #res-fecha-4, #res-fecha-6, #res-fecha-8{width:40%;float:right; margin-right:3%;}
+    #img-eventos-pc{ display: block; margin-left:auto; margin-right:auto;}
+    .tab-fixture-td{ font-size:16px;}
+    .tab-posi-td-equipo{ font-size:16px;}
+    .tab-posiciones{ font-size:16px;}
+    #caja_publicidades{box-sizing:border-box;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+    #caja-anotate{ width: 90%; height:300px;background:#ECECED; margin-left: auto;margin-right: auto; margin-top:30px; border:2px solid rgba(67,112,204,0.2);}
+    #caja-anotate > #anotate{display:none;}
+    #caja-anotate >#anotate2{display:block;width: 95%; height:61px;background:#ffffff;margin-left: auto;margin-right: auto;text-align:center;border:1px solid rgba(67,112,204,0.2);font-size:27px; margin-top: 10px; color: rgba(56,118,241,1.00); font-weight: bold;line-height: 56px;}
+    #boton-1{ width: 45%; float: left; margin-left: 18px;background:#ffffff;text-align:center; font-size:18px;margin-top:20px;padding:6px;border:1px solid rgba(67,112,204,0.2);}
+    #boton-2{ width:45%; float: right; margin-right: 18px; height:180px;background:#ffffff;text-align:center; font-size:18px;margin-top:20px;padding:6px;border:1px solid rgba(67,112,204,0.2);}
+    #texto_medio_torneos >#texto-anotate{background:#ECECED;  border:2px solid rgba(67,112,204,0.2); color: rgba(223,24,27,1.00); width: 90%;font-size: 19px;margin-left: auto;margin-right: auto;margin-top: 20px;padding: 19px;}
+        
+    }
+    
+    @media screen and (min-width:1281px){
+    #contenedor{width:90%;max-width:1300px;}
+    #normal_h{display:block;font-size:36px;float:right;margin-top:66px;width:75%;line-height:0px;}
+    #mobile_h{display:none;}
+    #icono_facebook{float:right;width:5%;clear:both;margin:-17% 6% 0% 0%;}
+    .franja_superior{height:119px;}
+    #logo-normal{margin-left:36px;float:left;display:block;margin-top:1px;}
+    #logo-celu{display:none;}
+    .facebook-seguir{display:none;}
+    .facebook-seguinos{position:fixed !important;right:0px;top:20px;z-index:10 !important;display:block;}
+    #cssmenu ul{margin-left:10% !important;}
+    #cssmenu ul .has-sub{margin-left:0px !important;}
+    #noticias_seccion{width:50%;display:inline-block;}
+    #texto_medio_noticias{height:auto;}
+    .banner_uefi{background:url("../imagenes/banner_escuelas_pc.gif") no-repeat scroll center/100% 100%;}
+    .facebook-seguir{top:55px;position:fixed !important;}
+    #partidos_seccion{width:25%;height:850px;float:left;}
+    .titulo_partidos{ text-align:center;} 
+    #publis_seccion{width:25%;height:auto;float:right;}
+    footer{clear:both;height:100px;}
+    #borde-sup-columnas-izq, #borde-sup-columnas-der{height:30px;}
+    #caja_publicidades > div{width:90%;margin:10px;height:110px;}
+    .img-supercreativos{background:url(../imagenes/b_supercreativos.jpg) no-repeat center 100%/102%;}
+    .img-centro-a{background:url(../imagenes/b_centro_apertura.jpg) no-repeat center 100%/102%;}
+    .img-trofeos{background:url(../imagenes/b_trofeos.jpg) no-repeat center 100%/102%;}
+    .img-libertadores{background:url(../imagenes/b_libertadores.jpg) no-repeat center 100%/102%;}
+    .img-lifemfut{background:url(../imagenes/abito.jpg) no-repeat center 100%/102%;}
+    .img-ligadefutsal{background:url(../imagenes/b_ligadefutsal.jpg) no-repeat center 100%/102%;}
+    .img-gnc{ background:url(../imagenes/b_publicidad-gnc.jpg) no-repeat center 100%/102%;}
+    .img-pablo{ background:url(../imagenes/b_pablo.jpg) no-repeat center 100%/102%;}
+    .img-fede{ background:url(../imagenes/fedegarcia-logo.jpg) no-repeat center 100%/102%;}
+    .img-seguros{ background:url(../imagenes/b_seguros.jpg) no-repeat center 100%/102%;}
+    footer{clear:both;height:90px;font-size:12px;}
+    #pie-text-derechos{width:49%;float:left;text-align:left;padding:10px;}
+    #me-gusta{margin-top:22px;margin-left:339px;float:left;}
+    #compartir{width:13%;float:right;margin-top:4px;}
+    .text-compartir{font-size:11px;}
+    #selector2015, #selector2014, #selector2013, #selector2012{width:20%;text-align:center;}
+    #texto_medio_torneos, #texto_medio_contacto{height:637px;}
+    #texto_medio_eventos{height:auto;}
+    #datos_contactos{width:30%;float:right;margin-right:152px;margin-top:65px;}
+    #contacto{width:30%;float:left;margin-left:105px;margin-top:22px;}
+    #boton-copa-1, #boton-copa-3, #boton-copa-5, #boton-copa-7, #boton-copa-9{width:35%;float:left;margin-left:70px;}
+    #boton-copa-2, #boton-copa-4, #boton-copa-6, #boton-copa-8, #boton-copa-10{width:35%;float:right;margin-right:70px;}
+    #boton-copa-1, #boton-copa-2, #boton-copa-3, #boton-copa-4, #boton-copa-5, #boton-copa-6, #boton-copa-7, #boton-copa-8, #boton-copa-9, #boton-copa-10{height:70px;padding-top:23px;}
+    #fecha-1, #fecha-2, #fecha-3, #fecha-4, #fecha-5, #fecha-6, #fecha-7, #fecha-8{margin-top:35px;height:199px;}
+    #fecha-1, #fecha-3, #fecha-5, #fecha-7{width:35%;float:left;margin-left:55px;}
+    #fecha-2, #fecha-4, #fecha-6, #fecha-8{width:35%;float:right;margin-right:55px;}
+    #texto_medio_copas{height:830px;}
+    .caja-mapas{height:250px;margin-top:25px;width:87%;margin-left:auto;margin-right:auto;}
+    .info-escuelas{width:55%;float:left;height:200px;}
+    .info-mapas{float:right;width:45%;padding-bottom:10%;height:95%;}
+    #aclaracion-mapas{width:87%;margin-left:auto;margin-right:auto;}
+    .fa-facebook-square, .fa-twitter-square, .fa-google-plus-square, .fa-linkedin-square{height:32px;}
+    .icon-envelope-square:before {font-size: 24px;}
+    .icon-phone-square:before {font-size: 24px;}
+    .icon-mobile:before {font-size: 24px;}
+    .icon-facebook-square:before {font-size: 24px;}
+    .tab-posiciones{ width:80%;}
+    .tab-resultados{ width:84%;}
+    #res-fecha-1, #res-fecha-2, #res-fecha-3, #res-fecha-4, #res-fecha-5, #res-fecha-6, #res-fecha-7, #res-fecha-8, #res-fecha-9{ margin-top:35px;height:321px; font-size:17px;}
+    #res-fecha-1, #res-fecha-3, #res-fecha-5, #res-fecha-7{width:36%;float:left;margin-left:12%;}
+    #res-fecha-2, #res-fecha-4, #res-fecha-6, #res-fecha-8{width:36%;float:right;margin-right:10%;}
+    #img-eventos-pc{ display: block; margin-left:auto; margin-right:auto;}
+    .tab-fixture-td{ font-size:16px;}
+    .tab-posi-td-equipo{ font-size:17px;}
+    .tab-posiciones{ font-size:17px;}
+    #caja_publicidades{box-sizing:border-box;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+    #caja-anotate{ width: 90%; height:300px;background:#ECECED; margin-left: auto;margin-right: auto; margin-top:30px; border:2px solid rgba(67,112,204,0.2);}
+    #caja-anotate > #anotate{display:none;}
+    #caja-anotate >#anotate2{display:block;width: 95%; height:61px;background:#ffffff;margin-left: auto;margin-right: auto;text-align:center;border:1px solid rgba(67,112,204,0.2);font-size:27px; margin-top: 10px; color: rgba(56,118,241,1.00); font-weight: bold;line-height: 56px;}
+    #boton-1{ width: 45%; float: left; margin-left: 27px;background:#ffffff;text-align:center; font-size:18px;margin-top:20px;padding:6px;border:1px solid rgba(67,112,204,0.2);}
+    #boton-2{ width:45%; float: right; margin-right: 27px; height:180px;background:#ffffff;text-align:center; font-size:18px;margin-top:20px;padding:6px;border:1px solid rgba(67,112,204,0.2);}
+    #texto_medio_torneos >#texto-anotate{background:#ECECED;  border:2px solid rgba(67,112,204,0.2); color: rgba(223,24,27,1.00); width: 90%;font-size: 19px;margin-left: auto;margin-right: auto;margin-top: 20px;padding: 19px;}
+        
+    }
