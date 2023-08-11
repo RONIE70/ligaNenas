@@ -3922,9 +3922,76 @@ transform: rotate(180deg);
   
 
 </head>
+<style>
+    /* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #9e0707;
+  color: #ddd;
+  font-size: 4rem;
+  padding: 20px;
+  border-radius: 50%;
+}
 
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 2;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+<script>
+    // When the user clicks on <div>, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
 
     <body>
+        
+
         <amp-auto-ads data-ad-client='ca-pub-5162242648405577' type='adsense'>
         </amp-auto-ads>
         <div id='body-wrapper'>
@@ -3952,6 +4019,7 @@ transform: rotate(180deg);
                                     <div class='menu-secondary-container'>
                                         <ul class='menus menu-secondary'>
                                             <li><a href='./index.html' style='background: #001e32;'>INICIO</a></li>
+                                            <li><a href='./novedades.html' style='background: #e33c17'>IMPORTANTE !</a></li>
                                             <li><a href='#' style='background: #093b5c;'>CAMPEONATO &#160;&#160;&#160;</a>
                                                 <ul class='children'>
                                                     <li><a href='#' style='background: #073f9e;'>Apertura&#160;&#160;</a>
@@ -3972,7 +4040,7 @@ transform: rotate(180deg);
     
                                                      </ul>
                                             </li>
-                                            <li><a href='#' style='background: #31869b;'>COPA DE CAMPEONES &#160;&#160;&#160;</a>
+                                            <li><a href='#' style='background: #31869b;'>COPA CAMPEONES &#160;&#160;&#160;</a>
                                                 <ul class='children'>
                                                     <li><a href='#'>Tabla General</a></li>
                                                     <li><a href='#'>Categorías</a></li>
@@ -3984,12 +4052,14 @@ transform: rotate(180deg);
                                                 <ul class='children'>
                                                     <li><a href='./galeriaFotos.html'>Fotos</a></li>
                                                     <li><a href='./fotosJornada.html'>Jornadas</a></li>
+                                                    <li><a href='./fotosEventos.html'>Jornadas</a></li>
                                                 </ul>
                                                 <ul class='children'>
                                                 </ul>
                                             </li>
                                             <li><a href='./direcciones.html'>DIRECCIONES</a></li>
                                             <li><a href='#' style='background: #39769f'>REGLAMENTO</a></li>
+                                            
                                              <li style='left: 42px;'><a href='#' style='background: #275d81; padding: 13px 13px 11px 13px;' title='Facebook'><img src='https://lh3.googleusercontent.com/pw/AM-JKLVvT4xEj-vxw1ftCJCEzFIr5Gh939EjPiwWooD6hFaCjrNTaMfwo9D-rj-D7swc2RvHfOiUw7y-ekOecPibvAFqZpwVRyeqgoEXfPXWkJvLrBMZ9rpZTnVf_KaWYdUKpsAm4q-kBYBKx68mmPoSG9Po=s20-no?authuser=0' /></a></li>
                                             <li style='left: 42px;'><a href='#' style='background: #094268; padding: 13px 13px 11px 13px;' title='Instagram'><img src='https://lh3.googleusercontent.com/pw/AM-JKLWoW2d4i8pScz0TT6RHZY-QUjTDqT9KbguQRadYYhAJHdL-rc0nw-Pb9hHcJpZwunmoCNaq6oumnfYW9fdW8Ee3ztLoaMBLCRNDY1ekiSKEkJXdI4D6IHiFpbzjwMgRhbUK91JH_bDtTyJo4yE9l-cD=s20-no?authuser=0' /></a></li>
                                              </ul>
@@ -3999,6 +4069,7 @@ transform: rotate(180deg);
                             </div>
                         </div>
                     </div>
+                    
                     <div style='clear:both;'></div>
                     <div id='header-wrapper'>
                         <div class='header section' id='header'>
@@ -4726,6 +4797,7 @@ transform: rotate(180deg);
     <!-- Featured Content Slider End -->
     <div id='crosscol-wrapper' style='text-align:center'>
         <div class='crosscol no-items section' id='crosscol'></div>
+        
     </div>
     <div id='main-wrapper'>
        
@@ -4933,7 +5005,7 @@ transform: rotate(180deg);
       table.sheet0 tr.row105 { height:19.5pt }
     </style>
   
-
+  
   
 
     <table border="1" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0 gridlines">
@@ -5909,7 +5981,7 @@ transform: rotate(180deg);
                 </div>
             </div>
         </div>
-
+        
         <div class='clear'></div>
     </div>
     </div>
@@ -6035,7 +6107,10 @@ transform: rotate(180deg);
             <div class='widget HTML' data-version='1' id='HTML55'>
                 <h2 class='title'><img src='https://lh3.googleusercontent.com/hVL2rgZNJ_Hn25rfogB8kwq_ZoKRKZav3lY2HtcmipHN2hSG5_K_l22cc9cfdWZNj7Pp3xh88nHH-IoLK_nYdrHv89gXwaNP2vx7gxHNQSCDqaFKGCSHiVXlNqoIr8lTfJpGvObQd6IlEmK4Hd90dY6q_7-qWCJ0PeA3cPVUxyJ3oiQ4-hHsy03owjGzTHVAzhT2cSRujSHMm2bLLETWCbonZ9ap2UJ2rQOE2FCvrklf4HSAStyOTAdPeXPq-b96tGID2OFOs7W928Rgkmfu_I_u2eIBeRpnIWKOiMkjIZ5FoGhRAd_YkOGfKfv2EYzWeQzJOeWNOWxjMz_4ZzNFtUETzUfD5fTpKjiScAsCF5NW67rxYEKMgIOsgAdNgysobY-xC_6VWwL0QeQcpVqGlYEL1c5DFao5kwVVNGVpJiCfzE7_BY4LSVEG2yCvmwkgqqKEAVzdBDHGkfGrGCXDWenI-SkCRheKm_bK8M1m5gE7NElDrdpcC1Vyc4viZ3DB2JMfGOekPQynx9nItGvASLMfGZ-x2sYynwy3R6SH4fdY8j4Q0HVY9Ke0JJ41WXu3oSxwWjHKQ--2M3HKPmXHnRWTbl9-YSwBMksyTslh-Cdhbqsps2tR2bvyfJNbpRGlyBMlhZ8uPW_JeN3yBABLAlFg6UFS84q9Jb_qgqbLmE7NZO6vPJyOE0g4OCqHG-42JD1dvGZ_-zuJ9V7AP0rde4z3=s14-no?authuser=0' style='padding-right:5px;' />Facebook</h2>
                 <div class='widget-content'>
-                    <!-- PONER PAGINA PARA RECORRER-->
+                    <!-- PONER PAGINA PARA RECORRER popup
+                    <!!--<div class="popup" onclick="myFunction()">ATENCION
+        <span class="popuptext" id="myPopup">Popup text...</span>
+      </div>-->
                   
                 </div>
                 
@@ -6051,6 +6126,7 @@ transform: rotate(180deg);
             left: -110px;
         }
     </style>
+    
     <div>
         <div class='social-profiles-widget'>
             <h3 class='widgettitle' style="color: #DBDBDB;">Contacto</h3><br>
